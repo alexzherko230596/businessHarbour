@@ -1,0 +1,32 @@
+.wrapperHowWeCanHelpYou{
+    padding-top: 80px;
+}
+.designBlockOpportunity{
+    margin-top: 24px;
+    flex-wrap: wrap;
+    padding-bottom: 112px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .wrapperHowWeCanHelpYou{
+        padding-top: 0px;
+    }
+    .designBlockOpportunity{
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .designBlockOpportunity{
+        flex-wrap:nowrap;
+        flex-direction: column;
+    }
+    h2{
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    h2{
+        font-size: 24px;
+    }
+    
+}

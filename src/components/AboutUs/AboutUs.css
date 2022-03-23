@@ -1,0 +1,63 @@
+.wrapperAboutUs{
+    margin: 92px 0px;
+}
+.designImageAboutUs{
+    width: 600px;
+    height: 514px;
+    background: url(../../img/aboutUs.jpg) center center/cover no-repeat;
+    border-radius: 10px;
+}
+.wrapperBlockAboutUs{
+    align-items: center;
+}
+.spaceBetweenText{
+    margin-top: 42px
+}
+.mainInfoBlockAboutUs{
+    flex-direction: column;
+    margin-left: 64px;
+    max-width: 400px
+}
+@media only screen and (max-width: 1200px) {
+    .designImageAboutUs{
+        width: 450px;
+    }
+    .devider{
+        margin-top: 24px;
+    }
+    .spaceBetweenText{
+        margin-top: 24px
+    }
+    p{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .designImageAboutUs{
+        width: 300px;
+        height: 290px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .spaceBetweenText{
+        margin-top: 22px;
+        font-weight: 500;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .wrapperBlockAboutUs{
+        flex-direction: column;
+    }
+    .designImageAboutUs{
+        width: 100%;
+    }
+    .mainInfoBlockAboutUs{
+        margin-left: 0px;
+        max-width: fit-content;
+        margin-top: 16px;
+    }
+    .wrapperAboutUs{
+        margin-bottom: 40px;
+    }
+}

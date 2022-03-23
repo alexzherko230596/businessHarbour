@@ -1,0 +1,64 @@
+.advantageCompany{
+    flex-direction:column;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+}
+.hugeNumber{
+    color: #ffffff;
+    font-size: 65px;
+    line-height: 1.55;
+    font-weight: 700;
+}
+.whiteDevider{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.2;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+.descrShowOff{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1200px) {
+    .hugeNumber{
+        font-size: 48px;
+    }
+    .whiteDevider{
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .advantageCompany{
+        width: 100%;
+        margin-top: 60px;
+    }
+    .hugeNumber{
+        font-size: 57px;
+        margin-bottom: 10px;
+    }
+    .whiteDevider{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .hugeNumber{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .advantageCompany{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .descrShowOff{
+        font-size: 16px;
+        line-height: 1.25;
+        font-weight: 300;
+    }
+}

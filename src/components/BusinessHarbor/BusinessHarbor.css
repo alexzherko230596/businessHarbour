@@ -1,0 +1,128 @@
+.blockBusinessHarbor{
+    padding: 100px 0px;
+    background-color: #fff;
+}
+.wrapperBusinessHarbor{
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.wrapperBusinessHarborReverse{
+    flex-direction: row;
+}
+.wrapperBusinessHarbor:first-child{
+    margin-top: 0px;
+}
+.showStyleImgBusinessHarbour{
+    display: none;
+    margin-top: 0px;
+}
+.styleText{
+    flex-direction: column;
+    min-height: 325px;
+}
+.designDescr{
+    width: 460px;
+    font-size: 16px;
+}
+.h3__BusinessHarbour{
+    width: 507px; 
+    font-size: 22px
+}
+.styleImgBusinessHarbour{
+    width: 507px;
+    height: 365px
+}
+.showDevider{
+    display: none;
+}
+.hideDevider{
+    display: flex;
+}
+@media only screen and (max-width: 1200px) {
+    .blockBusinessHarbor{
+        padding: 40px 0px;
+    }
+    .designDescr{
+        width: 350px;
+    }
+    .h3__BusinessHarbour{
+        width: 350px; 
+        font-size: 24px
+    }
+    h3{
+        font-size: 24px;
+    }
+    .styleImgBusinessHarbour{
+        width: 450px;
+        height: 300px
+    }
+    .wrapperBusinessHarbor{
+        justify-content: space-around;
+        align-items: center
+    }
+    .designDescr{
+        font-size: 15px;
+    }
+    .hideDevider{
+        display: flex;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .wrapperBusinessHarbor{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .wrapperBusinessHarborReverse{
+        flex-direction: column-reverse;
+    }
+    .showStyleImgBusinessHarbour{
+        display: flex;
+        margin-top: 30px;
+    }
+    .hideStyleImgBusinessHarbour{
+        display: none;
+    }
+    .styleImgBusinessHarbour{
+        width: 608px;
+        height: 346px
+    }
+    h3{
+        text-align: center;
+    }
+    .styleText{
+        align-items: center;
+    }
+    .designDescr{
+        width: 100%;
+    }
+    /* .devider{
+        display: none;
+    } */
+    .showDevider{
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 0px;
+    }
+    .h3__BusinessHarbour{
+        width: 100%;
+        font-size: 24px;
+        margin-top: 32px;
+    }
+    .hideDevider{
+        display: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .styleImgBusinessHarbour{
+        width: 100%;
+    }
+    .h3__BusinessHarbour{
+        width: 100%;
+        font-size: 17px;
+        margin-top: 24px;
+    }
+    .designDescr{
+        font-size: 14px;
+    }
+}

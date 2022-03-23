@@ -1,0 +1,63 @@
+.blockFAQ{
+    padding: 105px 0px;
+    transition: .5s all
+}
+.wrapperFAQ{
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    width: 750px;
+}
+.deviderFAQ{
+    background-color: #000;
+    max-width: 760px;
+    height: 1px;
+    margin-top: 0px;
+}
+.descrTextFAQ{
+    max-width: 760px;
+    flex-direction: row;
+    transition: max-height ease-in-out .3s, opacity ease-in-out .3s;
+    max-height: 0px;
+    z-index: -100;
+    overflow: hidden;
+}
+.dotFAQ{
+    width: 18px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: #000;
+    margin-top: 8px;
+}
+span{
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 300;
+    margin-left: 12px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .blockFAQ{
+        padding: 55px 0px;
+        transition: .5s all
+    }
+}
+@media only screen and (max-width: 992px) {
+    .wrapperFAQ{
+        width: 650px;
+    }
+    span{
+        font-size: 14px;
+    }
+    .blockFAQ{
+        justify-content: center;
+        margin: 0 auto;
+        align-items: center
+    }
+}
+@media only screen and (max-width: 767px) {
+    .wrapperFAQ{
+        width: 450px;
+    }
+}

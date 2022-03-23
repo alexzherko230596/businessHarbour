@@ -1,0 +1,109 @@
+.modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+    cursor: pointer;
+    overflow-y: scroll;
+}
+.modal.active{
+    opacity: 100;
+    pointer-events: all;
+    transition: .5s all;
+}
+.modal__window{
+    padding: 30px 45px 25px;
+    border-radius: 10px;
+    background-color: #f7f7f6;
+    min-height: 200px;
+    width: 560px;
+    cursor: default;
+    text-align: center;
+    flex-direction: column;
+    transition: .5s all;
+}
+.modal__h1{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.23;
+    margin-bottom: 11px;
+    justify-content: center;
+}
+.modal__descr{
+    color: #111111;
+    font-size: 16px;
+    line-height: 1.55;
+    margin-bottom: 24px;
+}
+.form__comment{
+    color: #111111;
+    font-weight: 500;
+    padding-bottom: 5px;
+    font-size: 18px;
+    line-height: 1.55;
+    text-align: left;
+}
+.button__form{
+    margin-top: 24px;
+    width: 100%;
+}
+.button__form:hover{
+    background-color: rgba(168, 36, 39, 1);
+}
+.styleParentForm{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.modalForm{
+    padding: 30px 45px 25px;
+    border-radius: 10px;
+    background-color: #f7f7f6;
+    min-height: 200px;
+    width: 560px;
+    cursor: default;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s all;
+    pointer-events: all;
+}
+.modalH1GotCustomerForm{
+    font-size: 24px;
+}
+.modalDescrGotCustomerForm{
+    margin-top: 12px;
+    font-size: 18px;
+}
+.makingCloseItem{
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    top: 40px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: black;
+}
+@media (max-height: 720px) {
+    .modal__window{
+        max-height: 600px;
+        height: 90vh;
+    }
+}
+@media (max-height: 560px) {
+    .modal__window{
+        max-height: 600px;
+        height: 90vh;
+    }
+}

@@ -1,0 +1,100 @@
+.blockLeaveAnApplication{
+    padding: 100px 0px;
+}
+.wrapperApplication{
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 48px;
+}
+.imgWarsawCity{
+    background: url(../../img/backgroundWarsaw.svg) center center/cover no-repeat;
+    width: 362px;
+    height: 364px;
+    border-radius: 10px;
+
+}
+.wrapperApplicationAdvantages{
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+.someAdvantagesApplication{
+    flex-direction: column;
+    margin-top: 0px;
+}
+.oneAdvantagesApplication{
+    margin-top: 24px;
+}
+.oneAdvantagesApplication:first-child{
+    margin-top: 0px;
+}
+.wrapperApplicationDescr{
+    width: 500px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.styleOptionTextOffer{
+    margin-left: 16px;
+    font-weight: 500;
+}
+.buttonAdvantage{
+    align-items: center;
+    cursor: pointer;
+    margin: 0px;
+}
+.buttonAdvantageText{
+    color: #d31027;
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) {
+    .blockLeaveAnApplication{
+        padding: 30px 0px 60px;
+    }
+    .wrapperApplication{
+        padding: 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .wrapperApplication{
+        flex-direction: column;
+    }
+    .imgWarsawCity{
+        width: 614px;
+        height: 378px;
+    }
+    .wrapperApplication{
+        align-items: center;
+    }
+    .wrapperApplicationAdvantages{
+        margin-top: 16px;
+        align-items:flex-start
+    }
+    .wrapperApplicationDescr{
+        width: 600px;
+    }
+    .someAdvantagesApplication{
+        margin-top: 24px;
+    }
+    .buttonAdvantage{
+        margin: 24px auto;
+        margin-bottom: 0px;
+    }
+    .blockLeaveAnApplication{
+        padding: 30px 0px 30px;
+    }
+    .buttonAdvantageText{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .imgWarsawCity{
+        width: 100%;
+    }
+    .wrapperApplicationDescr{
+        width: 100%;
+    }
+}

@@ -1,0 +1,243 @@
+.headerWrapper{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(18, 18, 18, 0.4);
+    position: fixed;
+    z-index: 10;
+}
+.menuWrapper{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.wrapperBurgerMenu{
+    display: none;
+}
+.linkMenu{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.linkMenu:hover{
+    color: #B00E0E
+} 
+ul{
+    display: flex;
+    padding: 0;
+}
+li{
+    padding: 0 15px;
+}
+ul li:first-child{
+    padding-left: 0px;
+}
+.secondWrapper{
+    min-width: 100px;
+    height: 80px;
+    align-items: center;
+}
+.wrapperImages{
+    min-width: 10px;
+}
+.wrapperLanguages{
+    margin-left: 30px;
+}
+.imagePath{
+    width: 25px;
+    height: 25px;
+    z-index: 100;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.headerMainIMG{
+    width: 120px; 
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.buttonChangeLanguage{
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.buttonChangeLanguageActive{
+    cursor: default;
+    opacity: 0.5;
+    transition: 0.5s all;
+}
+.buttonChangeLanguage:hover{
+    color: #B00E0E;
+}
+.buttonChangeLanguageActive:hover{
+    color:#fff;
+}
+.linkMenuHover{
+    color: #B00E0E;
+}
+.burgerMenu{
+    display: none;
+}
+.navMenuMobile{
+    display: none;
+}
+/* @media only screen and (max-width: 420px) {
+    .linkMenu{
+        color: red;
+    }
+   }
+   @media only screen and (max-width: 768px) {
+    .linkMenu{
+        color: orange;
+    }
+   }
+   @media only screen and (max-width: 992px) {
+    .linkMenu{
+        color: blue;
+    }
+   } */
+   @media only screen and (max-width: 1200px) {
+    .linkMenu{
+        font-size: 16px;
+    }
+    li{
+        padding: 0px 10px;
+    }
+    .headerMainIMG{
+        width: 100px;
+    }
+    .burgerMenu{
+        display: none;
+    }
+    .navMenuMobile{
+        display: none;
+    }
+    .wrapperBurgerMenu{
+        display: none;
+    }
+   }
+   @media only screen and (max-width: 992px) {
+    .linkMenu{
+        color: #fff;
+        font-size: 18px;
+    }
+    .menuWrapper{
+        display: none;
+    }
+    .burgerMenu{
+        width: 30px;
+        height: 20px;
+        position: relative;
+        display: block;
+        top: 30px;
+        left: 100%;
+        cursor: pointer;
+    }
+    .burgerMenu::before{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        display: flex;
+        position: absolute;
+        top: 0;
+        transition: 0.5s all;
+    }
+    .burgerMenu::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        transition: 0.5s all;
+    }
+    .burgerMenu.active::before{
+        transform: rotate(45deg);
+        top: 9px
+    }
+    .burgerMenu.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px
+    }
+    .burgerMenu.active .middleBurgerMenu{
+        opacity: 0;
+    }
+    .middleBurgerMenu{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        display: flex;
+        position: absolute;
+        top: 9px;
+        transition: 0.5s all;
+    }
+    .headerWrapper.active{
+        height: 100vh;
+        background-color: #000;
+        opacity: .9;
+    }
+    .wrapperBurgerMenu{
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background-color: #000;
+        display: none;
+        transition: 0.5s all;
+    }
+    .wrapperBurgerMenu.active{
+        display: flex;
+    }
+    .headerMainIMG{
+        width: 140px; 
+        height: auto;
+        position: relative;
+        left: 0%;
+        top: 0%;
+        transform: translate(0%, 0%);
+    }
+    .navMenuMobile{
+        text-align: center;
+        display: flex;
+    }
+    ul{
+        flex-direction: column;
+    }
+    ul li:first-child{
+        padding: 0px 0px;
+    }
+    .mobileFirstlinkMenu{
+        margin: 20px 0px;
+    }
+    li{
+        padding: 20px 0px;
+    }
+    .secondWrapper{
+        flex-direction: column;
+    }
+    .imagePath{
+        margin: 0px 20px;
+    }
+    .wrapperLanguages{
+        margin: 35px 0px;
+    }
+    .buttonChangeLanguage{
+        margin: 0px 20px;
+    }
+   }
+   @media only screen and (max-width: 767px) {
+
+   }

@@ -1,0 +1,85 @@
+.wrapperElementFAQ{
+    width: 100%; 
+    flex-direction: column; 
+    position: relative
+}
+.inscriptionFAQ{
+    justify-content: space-between;
+    width: 760px;
+    height: 84px;
+    align-items: center;
+}
+.inscriptionFAQ::after{
+    position: absolute; 
+    content: '';
+    top: 41px;
+    right: 0px;
+    width: 24px; 
+    height: 2px;
+    margin-right: 8px;
+    background-color: #000; 
+    transition: .5s all;
+}
+.inscriptionFAQ:hover::after{
+    background-color: #fff;
+}
+.firstArrow::after{
+    position: absolute; 
+    content: '';
+    width: 40px; 
+    height: 40px;
+    border-radius: 50px;
+    top: 22px;
+    right: 0px;
+    transition: .5s all;
+    z-index: -100;
+}
+.firstArrow:hover::after{
+    background-color: rgb(211, 16, 39);
+    
+}
+.firstArrowHandle::after{
+    transform: rotate(45deg);
+}
+.secondArrow::after{
+    content: '';
+    width: 2px; 
+    height: 24px; 
+    background-color: #000; 
+    position: absolute; 
+    top: 30px;
+    right: 19px;
+    transition: .5s all;
+}
+.secondArrow:hover::after{
+    background-color: #fff;
+}
+.secondArrowHandle::after{
+    transform: rotate(45deg);
+
+}
+.textBlockFAQ{
+    font-size: 22px;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) {
+    .textBlockFAQ{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .inscriptionFAQ{
+        width: 650px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .inscriptionFAQ{
+        width: 450px;
+        height: 75px;
+    }
+    .textBlockFAQ{
+        font-size: 16px;
+    }
+}
