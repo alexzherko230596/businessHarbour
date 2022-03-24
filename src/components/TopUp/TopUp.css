@@ -95,10 +95,48 @@
     align-items: center;
     fill: black;
 }
+@media only screen and (max-width: 500px) {
+    .modal__window{
+        width: 70%;
+    }
+    .modal__descr{
+        font-size: 12px;
+    }
+    .modal__h1{
+        font-size: 18px;
+    }
+    input{
+        font-size: 12px;
+        height: 30px;
+    }
+    textarea{
+        height: 32px;
+        padding: 8px 20px 0px 20px;
+        font-size: 12px;
+    }
+    .button__form {
+        font-size: 12px;
+        height: 40px;
+    }
+    .makingCloseItem{
+        width: 24px;
+        height: 24px;
+    }
+    .modalH1GotCustomerForm{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .modalDescrGotCustomerForm{
+        font-size: 12px;
+    }
+    .modalForm{
+        width: 70%;
+    }
+}
 @media (max-height: 720px) {
     .modal__window{
         max-height: 600px;
-        height: 90vh;
+        height: 80vh;
     }
 }
 @media (max-height: 560px) {

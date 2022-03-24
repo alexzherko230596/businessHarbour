@@ -76,6 +76,9 @@ padding-top: 50px;
 }
 @media only screen and (max-width: 500px) {
     .wrapperBlockFooter{
-        height: 560px;
+        height: 500px;
+    }
+    .wrapperFooterOneBlock:nth-child(even){
+        text-align: right;
     }
 }

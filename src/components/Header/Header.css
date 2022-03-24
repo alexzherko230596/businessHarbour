@@ -139,6 +139,7 @@ ul li:first-child{
         top: 30px;
         left: 100%;
         cursor: pointer;
+        z-index: 1000;
     }
     .burgerMenu::before{
         content: '';
