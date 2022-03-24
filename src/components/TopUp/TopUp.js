@@ -50,7 +50,7 @@ const TopUp = ({active, setActive}) => {
     }
     const sendEmail = (email, name, mobile) =>{
         setShowMainModal(false)
-        emailjs.sendForm('ReactGmail', 'template_8dtg4ti', form.current, 'bb1bXokpE7uxisysC')
+        emailjs.sendForm('ReactGmail', process.env.REACT_APP_MAIL_TEMPLATE, form.current, process.env.REACT_APP_EMAIL_USER_NAME)
         .then((result) => {
             setShowSuccessModal(true)
         }, (error) => {
@@ -69,6 +69,7 @@ const TopUp = ({active, setActive}) => {
         setShowErrorModal(false); 
         setShowSuccessModal(false)
     }
+    console.log(process.env)
     return(
         <div className={active ? 'modal active' : 'modal'} onClick={onCloseModal}>
             <img src={close} alt = 'close modal window' className="makingCloseItem"/>

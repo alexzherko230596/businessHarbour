@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import './MapBlock.css'
 import '../../index.css'
-
 export class MapBlock extends Component {
     render() {
       return (
@@ -36,5 +35,5 @@ export class MapBlock extends Component {
   }
    
   export default GoogleApiWrapper({
-    apiKey: ('AIzaSyAg2j_ykhSmp1uHwfd02EnNh8OZgWJLo2E')
+    apiKey: (process.env.REACT_APP_GOOGLEMAP)
   })(MapBlock)
