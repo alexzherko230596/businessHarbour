@@ -69,7 +69,6 @@ const TopUp = ({active, setActive}) => {
         setShowErrorModal(false); 
         setShowSuccessModal(false)
     }
-    console.log(process.env)
     return(
         <div className={active ? 'modal active' : 'modal'} onClick={onCloseModal}>
             <img src={close} alt = 'close modal window' className="makingCloseItem"/>
