@@ -74,3 +74,8 @@ padding-top: 50px;
     }
 
 }
+@media only screen and (max-width: 500px) {
+    .wrapperBlockFooter{
+        height: 560px;
+    }
+}

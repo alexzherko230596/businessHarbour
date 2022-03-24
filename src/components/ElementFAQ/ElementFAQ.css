@@ -83,3 +83,15 @@
         font-size: 16px;
     }
 }
+@media only screen and (max-width: 500px) {
+    .textBlockFAQ{
+        font-size: 13px;
+    }
+    .answerFAQ span{
+        font-size: 11px;
+    }
+    .inscriptionFAQ{
+        width: 350px;
+        height: 75px;
+    }
+}

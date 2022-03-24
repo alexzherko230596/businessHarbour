@@ -70,3 +70,12 @@
         font-size: 14px;
     }
 }
+@media only screen and (max-width: 767px) {
+    .oneOperationIMG{
+        width: 100px;
+        height: 100px;
+    }
+    p{
+        font-size: 13px;
+    }
+}

@@ -120,3 +120,11 @@ th{
         font-size: 12px;
     }
 }
+@media only screen and (max-width: 500px) {
+    th{
+        font-size: 9px;
+    }
+    td{
+        font-size: 11px;
+    }
+}
