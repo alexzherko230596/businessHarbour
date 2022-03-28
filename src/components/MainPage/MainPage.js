@@ -5,7 +5,7 @@ import TopUp from "../TopUp/TopUp"
 import { useTranslation } from "react-i18next";
 
 function MainPage() {
-    const {t, i18n} = useTranslation()
+    const {t} = useTranslation()
     const [modalactive, setModalActive] = useState(false)
     return(
         <div className="styleMainPage">
@@ -13,7 +13,7 @@ function MainPage() {
                <div className="wrapperMainTextMainPage">
                     <h1>POLSKO - BIAŁORUSKIE <br/>CENTRUM WSPIERANIA <br/> PRZEDSIĘBIORCZOŚCI SP. Z O.O.</h1>
                     <div className="mainButtonWrapper">
-                        <button className="button" onClick = {() => {setModalActive(true);}}>{t('button')}</button>
+                        <button className="button" onClick = {() => {setModalActive(true); document.body.style.overflow = "hidden"}}>{t('button')}</button>
                     </div>
                </div>
             </div>

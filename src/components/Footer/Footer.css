@@ -67,12 +67,17 @@ padding-top: 50px;
         text-align: right;
     }
     .boldCaptionFooter{
-        justify-content: end;
+        justify-content: flex-end;
     }
     .wrapperFooterOneBlock:nth-child(3){
-        align-items:flex-start
+        align-items: right
     }
-
+    .putLeftFooterMenu{
+        justify-content: flex-start;
+    }
+    .putКшпреFooterMenu{
+        justify-content: flex-start;
+    }
 }
 @media only screen and (max-width: 500px) {
     .wrapperBlockFooter{

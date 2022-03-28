@@ -55,6 +55,17 @@
     margin-top: 24px;
     width: 100%;
 }
+.button__close{
+    margin-top: 24px;
+    width: 100%;
+    border: 1px solid grey;
+    background-color: #fff;
+    color:#111111
+}
+.button__close:hover{
+    background-color: grey;
+    color:#fff
+}
 .button__form:hover{
     background-color: rgba(168, 36, 39, 1);
 }
@@ -118,9 +129,15 @@
         font-size: 12px;
         height: 40px;
     }
+    .button__close {
+        font-size: 12px;
+        height: 40px;
+        margin-top: 12px;
+    }
     .makingCloseItem{
         width: 24px;
         height: 24px;
+        display: none;
     }
     .modalH1GotCustomerForm{
         font-size: 14px;
@@ -136,12 +153,10 @@
 @media (max-height: 720px) {
     .modal__window{
         max-height: 600px;
-        height: 80vh;
     }
 }
 @media (max-height: 560px) {
     .modal__window{
         max-height: 600px;
-        height: 90vh;
     }
 }

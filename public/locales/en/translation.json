@@ -29,6 +29,8 @@
     "tableTitle3" : "Minimum employment",
     "tableTitle4" : "Other requirements",
     "tableTitle5" : "Maximum Support",
+    "tableTitle2V2" : "Minimum costs",
+    "tableTitle4V2" : "Other requirements",
     "tableRow1_1" : "B+R",
     "tableRow1_2" : "1 (less than 100 thousand per employee)",
     "tableRow1_4" : "High tech processes",
@@ -61,5 +63,6 @@
     "modalSuccessH1" : "We have successfully received the application",
     "modalSuccessDescr" : "Our staff will contact you as soon as possible",
     "modalErrorH1" : "Unfortunately something went wrong",
-    "modalErrorDescr" : "Please try again later or wtite down on email:"
+    "modalErrorDescr" : "Please try again later or wtite down on email:",
+    "close" : "Close"
 }

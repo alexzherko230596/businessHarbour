@@ -20,7 +20,7 @@
     font-weight: 500;
 }
 .linkMenu:hover{
-    color: #B00E0E
+    color: #e63946
 } 
 ul{
     display: flex;
@@ -66,15 +66,18 @@ ul li:first-child{
     padding: 0 10px;
     border: none;
     cursor: pointer;
+    opacity: 0.5;
     transition: 0.5s all;
 }
 .buttonChangeLanguageActive{
     cursor: default;
-    opacity: 0.5;
+    color: white;
     transition: 0.5s all;
+    opacity: 1;
 }
 .buttonChangeLanguage:hover{
-    color: #B00E0E;
+    color: #fff;
+    opacity: 1;
 }
 .buttonChangeLanguageActive:hover{
     color:#fff;
@@ -163,11 +166,11 @@ ul li:first-child{
     }
     .burgerMenu.active::before{
         transform: rotate(45deg);
-        top: 9px
+        top: 8px
     }
     .burgerMenu.active::after{
         transform: rotate(-45deg);
-        bottom: 9px
+        bottom: 8px
     }
     .burgerMenu.active .middleBurgerMenu{
         opacity: 0;
@@ -185,12 +188,13 @@ ul li:first-child{
     .headerWrapper.active{
         height: 100vh;
         background-color: #000;
-        opacity: .9;
+        opacity: 1;
     }
     .wrapperBurgerMenu{
         z-index: 100;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
+        margin-top: 130px;
         align-items: center;
         flex-direction: column;
         height: 100vh;

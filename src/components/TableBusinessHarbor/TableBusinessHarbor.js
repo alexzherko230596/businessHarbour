@@ -63,11 +63,11 @@ function TableBusinessHarbor() {
                 <table>
                    <thead> 
                        <tr>
-                            <th style = {{width: '25%'}}>Тип инвестиций</th>
-                            <th style = {{width: '20%'}}>Минимальные затраты</th>
-                            <th style = {{width: '15%'}}>Минимальная занятость</th>
-                            <th className="hideblockTable" style = {{width: '15%'}}>Другие требования</th>
-                            <th style = {{width: '25%'}}>Максимальная поддержка</th>
+                            <th style = {{width: '25%'}}>{t('tableTitle1')}</th>
+                            <th style = {{width: '20%'}}>{t('tableTitle2V2')}</th>
+                            <th style = {{width: '15%'}}>{t('tableTitle3')}</th>
+                            <th className="hideblockTable" style = {{width: '15%'}}>{t('tableTitle4V2')}</th>
+                            <th style = {{width: '25%'}}>{t('tableTitle5')}</th>
                         </tr>
                     </thead>
                     <tbody>

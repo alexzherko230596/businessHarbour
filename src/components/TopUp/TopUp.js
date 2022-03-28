@@ -57,7 +57,7 @@ const TopUp = ({active, setActive}) => {
             setShowErrorModal(true)
         });
     }
-    const onCloseModal = () => {
+    const onCloseModal = (e) => {
         setActive(false); 
         setEmail(''); 
         setName(''); 
@@ -68,6 +68,8 @@ const TopUp = ({active, setActive}) => {
         setShowMainModal(true); 
         setShowErrorModal(false); 
         setShowSuccessModal(false)
+        document.body.style.overflow = "visible"
+        e.stopPropagation()
     }
     return(
         <div className={active ? 'modal active' : 'modal'} onClick={onCloseModal}>
@@ -83,6 +85,7 @@ const TopUp = ({active, setActive}) => {
                     <label className="form__comment">{t('popupComment')}</label>
                     <textarea value={comment} onChange = {e => setComment(e.target.value)} name="form_comment"></textarea>
                     <button type = 'submit' className="button button__form">{t('button')}</button>
+                    <button type="reset" className="button button__close" onClick={onCloseModal}>{t('close')}</button>
                 </form>
                </div>
             </div>

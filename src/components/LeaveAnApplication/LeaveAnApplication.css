@@ -48,6 +48,9 @@
     line-height: 1.55;
     font-weight: 600;
 }
+.button_text{
+    width: 250px;
+}
 
 @media only screen and (max-width: 1200px) {
     .blockLeaveAnApplication{
@@ -88,6 +91,9 @@
     }
     .buttonAdvantageText{
         font-size: 16px;
+    }
+    .button_text{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 767px) {

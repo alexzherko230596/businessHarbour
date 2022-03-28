@@ -14,15 +14,27 @@ function Header() {
         i18n.changeLanguage(language)
         setDisabled(!disabled)
     }
-    const toggleBurgerMenu = () => {
+    const toggleBurgerMenu = (e) => {
+        e.preventDefault()
+        e.stopPropagation()
         header.current.classList.toggle('active')
         burgerInfo.current.classList.toggle('active')
         burgerMenu.current.classList.toggle('active')
+        if(document.body.style.overflow === "visible"){
+            document.body.style.overflow = "hidden"
+            e.preventDefault()
+        }
+        else{
+            document.body.style.overflow = "visible"
+            e.preventDefault()
+        }
     }
-    const hideBurgerMenu = () =>{
+    const hideBurgerMenu = (e) =>{
+        e.preventDefault()
         header.current.classList.toggle('active')
         burgerInfo.current.classList.toggle('active')
         burgerMenu.current.classList.toggle('active')
+        document.body.style.overflow = "visible"
     }
     return (
         <div ref={header} className='headerWrapper'>

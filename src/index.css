@@ -6,8 +6,9 @@ body {
   background-color: white;
   color: #111111;
   font-family: 'Montserrat', sans-serif;
+  overflow: visible;
 }
-body.modal{
+body .fixeScroll{
   overflow: hidden;
 }
 .container{

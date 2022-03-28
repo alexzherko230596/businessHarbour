@@ -32,10 +32,11 @@ function LeaveAnApplication() {
                             
                             </div>
                         </div>
-                        <div className="buttonAdvantage" onClick = {() => setModalActive(true)}>
+                        {/* <div className="buttonAdvantage" onClick = {() => setModalActive(true)}>
                             <div className="buttonAdvantageText">{t('buttonWithoutBorders')}</div>
                             <img src={require('../../icons/arrowRight.png')} alt = 'Arrow right' width="22" height="7" style = {{marginLeft: '12px'}}/>
-                        </div>
+                        </div> */}
+                         <button className="button button__form button_text"  onClick = {() => {setModalActive(true); document.body.style.overflow = "hidden"}}>{t('button')}</button>
                     </div>
                 </div>
                 <TopUp active = {modalactive} setActive = {setModalActive}/>

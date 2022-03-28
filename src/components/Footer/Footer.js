@@ -27,7 +27,7 @@ function Footer() {
                     </div>
 
                     <div className="wrapperFooterOneBlock">
-                        <div className="boldCaptionFooter">{t('footerMenu')}</div>
+                        <div className="boldCaptionFooter putLeftFooterMenu">{t('footerMenu')}</div>
                         <ul className="listFooterText">
                             <li className="styleTextListFooter">
                                 <Link
